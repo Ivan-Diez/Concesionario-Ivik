@@ -1,0 +1,526 @@
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+    font-family: 'SourceSansProREG';
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'MontserratAlternates';
+    src: url(../fonts/MontserratAlternates-ExtraBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'SourceSansPro';
+    background-color: #D9CDBF;
+    color: #fff;
+}
+
+header {
+    background-color: #071A40;
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.logoHeader {
+    font-family: 'MontserratAlternates';
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+
+.footer {
+    background-color: #071A40;
+    text-align: center;
+}
+
+.footerCont {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+.footerTitle {
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: inset 0 15px 25px rgba(41, 96, 168, .5);
+}
+
+.footerTitle a {
+    color: white;
+    font-family: 'MontserratAlternates';
+}
+
+.footerContact {
+    text-align: left;
+    line-height: 2;
+    width: 50vw;
+}
+
+.footerNetworks {
+    width: 20vw;
+    line-height: 2;
+    text-align: left;
+}
+
+.footerDerechos {
+    color: #D9CDBF;
+    box-shadow: inset 0 10px 25px rgba(0, 0, 0, .5);
+    padding: .2rem 0;
+    letter-spacing: .2rem;
+    word-spacing: .2rem;
+}
+
+.footerCont ul li img {
+    padding-right: .4rem;
+}
+
+/* MAIN- ALL PAGES */
+/* MAIN- ALL PAGES */
+/* MAIN- ALL PAGES */
+
+/* Inicio */
+/* Presentación del servicio */
+
+.banner {
+    background-image: url(../img/menu/fondo.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* + gridh, etc. */
+
+
+/* Publicidad */
+
+.addsTitle {
+    color: #071A40;
+    font-size: 3rem;
+    margin: 2rem;
+    font-family: 'SourceSansProREG';
+    text-align: center;
+}
+
+.banner3 {
+    background-image: url(../img/menu/fondopub.jpg);
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.contentVideo {
+    display: flex;
+    justify-content: center;
+}
+
+.contentVideo video {
+    width: 50vw;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: #000;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+}
+
+/* Tarjetas */
+
+.gridCard {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.cardContent {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.cardContentText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+    border-top-left-radius: 2rem;
+    box-shadow: inset 15px 10px 10px -15px rgba(0, 0, 0, .6);
+}
+
+.cardContentText h3 {
+    font-family: 'SourceSansProREG';
+    font-size: 2rem;
+    color: #022873;
+}
+
+.cardContentText p {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    color: #000;
+}
+
+.cardContentText a {
+    display: block;
+    color: white;
+    font-family: 'SourceSansProREG';
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #BFA450;
+    padding: .5rem;
+}
+
+.cardImg {
+    border-bottom-right-radius: 2rem;
+    box-shadow: inset 15px 0 30px -5px rgba(0, 0, 0, .8);
+    /* box-shadow: 5px 10px 25px -2px rgba(0, 0, 0, 0.5); */
+    background-color: #022873;
+    border-right-style: solid;
+    border-width: .2rem;
+    border-color: #BFA450;
+
+}
+
+.cardImg img {
+    margin-top: 3rem;
+}
+
+
+/* Titulo incial en demás páginas */
+
+.titleIn {
+    color: #000;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.titleIn h2 {
+    margin-top: 1rem;
+    border-bottom: #000 solid;
+}
+
+/* Página: Comprá un auto */
+
+.gridCatalogue {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1rem 0rem;
+}
+
+.catalogueContent {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    overflow: hidden;
+    
+}
+
+.catalogueContent h3 {
+    font-family: 'SourceSansProREG';
+    color: #071A40;
+    background-color: #BFA450;
+    box-shadow: inset -15px -15px 0px -12px rgba(0, 0, 0, .8);
+    font-size: 2rem;
+    padding: 1rem 1rem;
+}
+
+.catalogueImg {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.catalogueImg img {
+    background-color: white;
+    margin: 2rem;
+    border: #000 solid 2px;
+    border-radius: .5rem;
+    box-shadow:inset 0px -15px 50px -5px rgba(7, 26, 64, 0.8);
+}
+
+/* Página: Ubicación */
+
+.contentMap {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.contentMap img {
+    width: 100%;
+    border: #000 solid ;
+}
+
+/* Página: Contacto */
+
+.contentForm {
+    margin: 1rem;
+}
+
+.formStyle {
+    color: #fff;
+    background-color: #071A40;
+    padding: 1rem;
+}
+
+ .formStyle div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+ }
+
+ .formStyle div label {
+    font-size: 1.5rem;
+ }
+ .formStyle div input {
+    font-size: 1.5rem;
+    width: 40vw;
+ }
+
+
+ .contentTextarea textarea {
+    width: 60%;
+ }
+
+ .button {
+    background-color: #BFA450;
+    font-family: 'SourceSansProREG';
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    box-shadow: inset 0 0 15px #000;
+ }
+
+/* Nosotros */
+
+.banner2 {
+    background-image: url(../img/nosotros/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2rem 6rem;
+}
+
+.tituloClientes {
+    font-size: 3rem;
+    color: #071A40;
+    margin: 3rem 1rem;
+    border-bottom: #071A40 solid;
+}
+
+/* Grilla Horizontal: Información */
+
+.gridh {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5rem;
+    margin: 1rem 1rem;
+}
+
+.gridhContent {
+    display: flex;
+    justify-content: space-between;
+    background-color:  rgba(2, 40, 115, 0.8);
+    padding: .5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.contentText {
+    text-align: center;
+    line-height: 2;
+    padding: 1rem;
+}
+
+.contentText h2 {
+    font-size: 2rem;
+}
+
+.contentText h3 {
+    text-align: start;
+}
+
+.contentImg {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.contentImg img {
+    overflow: hidden;
+    border: #000 solid 2px;
+    box-shadow: 0 0 15px #000;
+}
+
+/* Grilla vertical: Clientes */
+
+ .gridv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin: 2rem 0;
+ }
+
+ .cardClientes {
+    background-color: #fff;
+    color: #000;
+    padding: 2rem;
+    border: #071A40 solid 1px;
+    border-right: #BFA450 solid 3px;
+    box-shadow:inset -15px 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.cardName {
+    font-family: 'SourceSansProREG';
+}
+
+.cardCar {
+    margin-bottom: 1rem;
+}
+
+.cardDescription {
+    margin-bottom: 2rem;
+
+}
+
+.cardClientes img {
+    width: 100%;
+    border-radius: 150px;
+    border: #000 solid 2px;
+}
+
+
+@media (max-width: 992px) {
+    .gridv {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar ul {
+        display: none
+    }
+
+    .gridhContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .cardImg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardImg img {
+        padding: 1rem;
+        margin-top: 0;
+    }
+
+    .catalogueImg {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+@media (max-width: 660px) {
+    .gridv {
+        grid-template-columns: 1fr;
+    }
+
+    .gridh {
+        display: inline;
+    }
+
+    .gridhContent {
+        margin-bottom: 1rem;
+    }
+
+    .contentImg img {
+        width: 100%;
+    }
+
+    .gridCard {
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .contentText {
+        margin-bottom: 1rem; 
+    }
+
+    .contentText h2 {
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+}
