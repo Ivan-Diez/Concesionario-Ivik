@@ -51,6 +51,9 @@ p {
 /* NAVBAR */
 /* NAVBAR */
 
+.backazul {
+    background-color: #071A40;
+}
 
 .navbar {
     display: flex;
