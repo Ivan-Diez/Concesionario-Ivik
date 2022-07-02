@@ -1,37 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../img/menu/logo.png" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Concesionario Ivik</title>
-</head>
-    <body>
-        <header>
-            <nav class="navbar container">
-                <a href="../index.html" class="logoHeader">Concesionario Ivik</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/menu/logo.png" />
+        <!-- Linkeado de Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../css/style.css" />
 
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./compra.html">Comprá un auto</a></li>
-                    <li><a href="./ubicacion.html">Ubicación</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
+        <title>Concesionario Ivik</title>
+    </head>
+    <body>
+        <!-- Navbar con Bootstrap -->
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container">
+                <a class="navbar-brand text-light fs-3 logoHeader" href="../index.html">🚘 Concesionario Ivik</a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse listBackground" id="navbarNavAltMarkup">
+                  <div class="navbar-nav navbarTexto fs-5 ms-auto">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="./compra.html">Comprá un auto</a>
+                    <a class="nav-link" href="./ubicacion.html">Ubicación</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </div>
+                </div>
+              </div>
             </nav>
         </header>
+
     <!-- Formulario dentro de la página de Contacto -->
-        <main class="container">
-            <div class="titleIn">
+        <main>
+            <div class="titleIn text-dark container">
                 <h1>Contacto</h1>
                 <h2>Completá el formulario y nos ponemos en contacto con vos!</h2>
             </div>
 
-            <section>
-                <article class="contentForm">
-                    <form action="" class="formStyle">
+            <section class="container">
+                <article class="listBackground p-5 formStyle">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Nombre</label>
+                          <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre...">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Apellido</label>
+                          <input type="password" class="form-control" id="inputPassword4" placeholder="Apellido...">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputAddress" placeholder="ejemplo@gmail.com">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress2" class="form-label">Número telefónico</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="+54 015 XXXX-XXXX">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">Ciudad</label>
+                          <input type="text" class="form-control" id="inputCity" placeholder="Ciudad...">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">Provincia</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Seleccióna tu provincia</option>
+                            <option>Buenos Aires</option>
+                            <option>Jujuy</option>
+                            <option>Santa Fe</option>
+                            <option>Córdoba</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">Código postal</label>
+                          <input type="number" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="buttonStyle">Enviar</button>
+                        </div>
+                      </form>
+                    <!-- <form action="" class="formStyle">
                         <div>
                             <label for="nombre"> Su nombre</label>
                             <input type="text" id="nombre" name="nombre" placeholder="Nombre..." />
@@ -64,40 +115,50 @@
                         
                         <div>
                             <button type="submit" class="button">Enviar</button>
-                        </div>
-                        
+                        </div> -->       
                     </form>
                 </article>
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="footerTitle">
-                <a href="../index.html">Concesionario Ivik</a>
+        <footer class="mt-5 text-white bg-gradient border-top border-dark border-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-md-4 p-4">
+                  <h6 class="fs-1">Contacto</h6>
+                  <ul class="list-unstyled">
+                    <li class="mt-1"><a href="" class="fs-5 text-white"><i class="bi bi-telephone me-2"></i>concesionarioivik.arg@ventas.com</a></li>
+                    <li class="mt-1"><a href="" class="fs-5 text-white"><i class="bi bi-phone me-2 "></i>+54 011 3356 3969</i></a></li>
+                    <li class="mt-1"><a href="" class="fs-5 text-white"><i class="bi bi-telephone me-2"></i>+54 0800 666 1518</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-12 col-md-4 p-4">
+                  <h6 class="fs-1">Encontrános!</h6>
+                  <p>
+                    Nos podés encontrar en las principales redes sociales del mundo. <br> Aprovecha nuestro servicio de respuesta inmediata y comunicate con nosotros a través de las estas!
+                  </p>
+                </div>
+                <div class="col-sm-12 col-md-4 p-4">
+                  <h6 class="fs-1">Redes sociales</h6>
+
+                  <ul class="d-flex flex-column ms-5">
+                    <li class="mt-1">
+                        <a href="https://whatsapp.com" class="text-white fs-5"><i class="bi bi-whatsapp me-2"></i>Whatsapp</i></a>
+                    </li>
+                    <li class="mt-1">
+                        <a href="https://instagram.com" class="text-white fs-5"><i class="bi bi-instagram me-2"></i>Instagram</a>
+                    </li>
+                    <li class="mt-1">
+                        <a href="https://facebook.com" class="text-white fs-5"><i class="bi bi-facebook me-2"></i>Facebook</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <div class="footerCont">
-                <div class="footerContact">
-                    <h3>Contacto</h3>
-                    <ul>
-                        <li><img src="../img/icons/email.png" alt="emaillogo" />crioivik.arg@ventas.com</li>
-                        <li><img src="../img/icons/wpp.png" alt="wpplogo" />+54 011 3356 3969</li>
-                        <li><img src="../img/icons/call.png" alt="calllogo" />+54 0800 666 1518</li>
-                    </ul>
-                </div>
-
-               <div class="footerNetworks">
-                    <h3>Encontrános!</h3>
-                    <ul>
-                        <li><img src="../img/icons/fb.png" alt="fblogo" />Facebook</li>
-                        <li><img src="../img/icons/ig.png" alt="iglogo" />Instagram</li>
-                        <li><img src="../img/icons/yt.png" alt="ytlogo" />Youtube</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footerDerechos">
+            <div class="footerDerechos text-center">
                 <h4>© Copyright 2022 - Ivan Diez - Todos los derechos reservados</h4>
             </div>
-        </footer>
+          </footer>
     </body>
 </html>

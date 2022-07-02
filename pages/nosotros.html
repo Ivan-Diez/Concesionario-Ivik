@@ -1,134 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../img/menu/logo.png" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Concesionario Ivik</title>
-</head>
-    <body>
-        <header>
-            <nav class="navbar container">
-                <a href="../index.html" class="logoHeader">Concesionario Ivik</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/menu/logo.png" />
+        <!-- Linkeado de Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../css/style.css" />
 
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./compra.html">Comprá un auto</a></li>
-                    <li><a href="./ubicacion.html">Ubicación</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
+        <title>Concesionario Ivik</title>
+    </head>
+    <body>
+        <!-- Navbar con Bootstrap -->
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container">
+                <a class="navbar-brand text-light fs-3 logoHeader" href="../index.html">🚘 Concesionario Ivik</a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse listBackground" id="navbarNavAltMarkup">
+                  <div class="navbar-nav navbarTexto fs-5 ms-auto">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="./compra.html">Comprá un auto</a>
+                    <a class="nav-link" href="./ubicacion.html">Ubicación</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </div>
+                </div>
+              </div>
             </nav>
         </header>
 
         <main>
-            <div class="titleIn container">
+            <div class="titleIn container text-dark mb-5">
                 <h1>Sobre nosotros</h1>
                 <h2>Informate acerca de a quién le estas comprando!</h2>
             </div>
-            
-            <section class="banner2 container">
-                <div class="gridh">
-                    <article class="gridhContent">
-                        <div class="contentText">
-                            <h2>Nuestra historia</h2>
-                            <p>Tenemos el agrado de representar oficialmente la marca del pueblo hace 15 años. En un principio, nos agrupamos mediante el vínculo familiar para hacer crecer esta firma, logrando excelentes resultados que nos permitieron con el paso del tiempo la inclusión de quienes aceptasen el compromiso de actúar para lograr cada vez un mejor desempeño en nuestros servicios </p>
-                        </div>
-                        <div class="contentImg">
-                            <img src="../img/nosotros/historia1.jpg" alt="nhistoria" />
-                        </div>
-                    </article>
 
-                    <article class="gridhContent">
-                        <div class="contentText">
-                            <h2>Nuestra reputación</h2>
-                            <p>Poseemos la valoración en carta de nuestros clientes, nos tomamos la molestia de opcionalmente solicitar el llenado de un formulario luego de concretar una venta, para que el cliente explaye su conformidad hacia nuestro servicio. <br> Nos respalda un certificado por la firma Volkswagen como concesionario líder en ventas en los últimos 5 años.</p>
-                        </div>
-                        <div class="contentImg">
-                            <img src="../img/nosotros/reputacion1.jpg" alt="nreputación" />
-                        </div>
-                    </article>
-                    
-                    <article class="gridhContent">
-                        <div class="contentText">
-                            <h2>Nuestros servicios</h2>
-                            <p>Nos encargamos del llenado de todos los formularios requeridos con suma rapidez para que al momento de abonar el precio del producto, usted se convierta en el titular oficial del mismo. Le permitimos hacerse de este brindandole la posiblidad de retirarlo en el instante proximo al que usted realice el pago.<br> Si demoramos más de 72hs en la entrega del vehículo bonificamos el primer servicio en Concesionarios Oficiales.</p>
-                        </div>
-                        <div class="contentImg">
-                            <img src="../img/nosotros/servicios1.jpg" alt="nservicios" />
-                        </div>
-                    </article>
+            <div class="container banner2">
+                <div class="row g-5">
+                    <div class="col-xs-12 col-md-8 offset-md-2">
+                        <article class="card mb-3 cardBackground cardEffect">
+                            <div class="row g-0">
+                                <div class="col-xl-7 col-md-12">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title fw-bold text-white fs-2 text">Nuestra historia</h5>
+                                        <p class="card-text text-white fs-5 mt-4">Tenemos el agrado de representar oficialmente la marca del pueblo hace 15 años.<br>En un principio, nos agrupamos mediante el vínculo familiar para hacer crecer esta firma, logrando excelentes resultados que nos permitieron con el paso del tiempo la inclusión de quienes aceptasen el compromiso de actúar para lograr cada vez un mejor desempeño en nuestros servicios.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-5 col-md-12 p-1 m-auto text-center">
+                                  <img src="../img/nosotros/historia1.jpg" class="img-fluid rounded-end rounded-5 border border-light border-opacity-50" alt="Historia">
+                                </div>  
+                            </div>
+                        </article>
 
+                    </div>
                 </div>
-            </section>
+
+                <div class="row g-5">
+                    <div class="col-xs-12 col-md-8 offset-md-2">
+
+                        <article class="card mb-3 cardBackground cardEffect">
+                            <div class="row g-0">
+                                <div class="col-xl-7 col-md-12">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title fw-bold text-white fs-2 text">Nuestra reputación</h5>
+                                        <p class="card-text text-white fs-5 mt-4">Poseemos la valoración en carta de nuestros clientes, nos tomamos la molestia de opcionalmente solicitar el llenado de un formulario luego de concretar una venta, para que el cliente explaye su conformidad hacia nuestro servicio. <br> Nos respalda un certificado por la firma Volkswagen como concesionario líder en ventas en los últimos 5 años.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-5 col-md-12 p-1 m-auto text-center">
+                                  <img src="../img/nosotros/reputacion1.jpg" class="img-fluid rounded-end rounded-5 border border-light border-opacity-50" alt="Historia">
+                                </div>  
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-xs-12 col-md-8 offset-md-2">
+
+                        <article class="card mb-3 cardBackground cardEffect">
+                            <div class="row g-0">
+                                <div class="col-xl-7 col-md-12">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title fw-bold text-white fs-2 text">Nuestros servicios</h5>
+                                        <p class="card-text text-white fs-5 mt-4">Nos encargamos del llenado de todos los formularios requeridos con suma rapidez para que al momento de abonar el precio del producto, usted se convierta en el titular oficial del mismo. Le permitimos hacerse de este brindandole la posiblidad de retirarlo en el instante proximo al que usted realice el pago.<br> Si demoramos más de 72hs en la entrega del vehículo bonificamos el primer servicio en Concesionarios Oficiales.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-5 col-md-12 p-1 m-auto text-center">
+                                  <img src="../img/nosotros/servicios1.jpg" class="img-fluid rounded-end rounded-5 border border-light border-opacity-50" alt="Historia">
+                                </div>  
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
 
             <!-- Cartas clientes -->
 
+
             <section class="container">
                 <h2 class="tituloClientes">Carta de clientes</h2>
-                
-                <article class="gridv">
-                    <div class="cardClientes">
-                        <div>
-                            <img src="../img/clients/facundo1.jpg" alt="facundo" />
-                        </div>
-                        <h3 class="cardName">Facundo</h3>
-                        <h4 class="cardCar">Volkswagen Polo</h4>
-                        <p class="cardDescription">Excelente predisposición por parte del equipo. Resultados rápidos! Me llevé una muy buen experiencia.</p>
+
+                <div class="row g-5">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <article class="card effect text-dark h-100 border-dark cardUp">
+                            <img
+                            src="../img/clients/facundo1.jpg"
+                            class="card-img-top p-4"
+                            alt="Imagen de tarjeta"
+                            />
+                            <div class="card-body">
+                            <h4 class="card-title fw-bold cardName">Facundo</h4>
+                            <h5 class="card-title">Volkswagen Polo</h5>
+                            <p class="card-text my-4 ">
+                                Excelente predisposición por parte del equipo. Resultados rápidos! Me llevé una muy buen experiencia.
+                            </p>
+
+                            </div>
+                        </article>
                     </div>
 
-                    <div  class="cardClientes">
-                        <div>
-                            <img src="../img/clients/melisa1.jpg" alt="melisa" />
-                        </div>
-                        <h3 class="cardName">Melisa</h3>
-                        <h4 class="cardCar">Volkswagen Gol</h4>
-                        <p class="cardDescription">Muy amable el grupo de trabajo. Todo correcto sin trampas, mucha claridad y prolijidad<p> 
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <article class="card effect text-dark h-100 border-dark cardUp">
+                            <img
+                            src="../img/clients/melisa1.jpg"
+                            class="card-img-top p-4"
+                            alt="Imagen de tarjeta"
+                            />
+                            <div class="card-body">
+                            <h4 class="card-title fw-bold cardName">Melisa</h4>
+                            <h5 class="card-title">Volkswagen Gol</h5>
+                            <p class="card-text my-4">
+                                Muy amable el grupo de trabajo. Todo correcto sin trampas, mucha claridad y prolijidad.
+                            </p>
+                            </div>
+                        </article>
                     </div>
-
-                    <div  class="cardClientes">
-
-                        <img src="../img/clients/ricardo1.jpg" alt="ricardo" />
-
-                        <h3 class="cardName">Ricardo</h3>
-                        <h4 class="cardCar">Volkswagen Amarok</h4>
-                        <p class="cardDescription">Gran atención, excelente servicio. Muy conforme con todo el equipo, se ganaron mi aprobación.</p>
+                    
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <article class="card effect text-dark h-100 border-dark cardUp">
+                            <img
+                            src="../img/clients/ricardo1.jpg"
+                            class="card-img-top p-4"
+                            alt="Imagen de tarjeta"
+                            />
+                            <div class="card-body">
+                            <h4 class="card-title fw-bold cardName">Ricardo</h4>
+                            <h5 class="card-title">Volkswagen Amarok</h5>
+                            <p class="card-text my-4">
+                                Gran atención, excelente servicio. Muy conforme con todo el equipo, se ganaron mi aprobación.
+                            </p>
+                            </div>
+                        </article>
                     </div>
-                </article>
-            </section>
+                </div>
+            </section>    
         </main>
 
         <!--FOOTER-->
 
-        <footer class="footer">
-            <div class="footerTitle">
-                <a href="../index.html">Concesionario Ivik</a>
+        <footer class="mt-5 text-white bg-gradient border-top border-dark border-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-md-4 p-4">
+                  <h6 class="fs-1">Contacto</h6>
+                  <ul class="list-unstyled">
+                    <li class="mt-1"><a href="" class="fs-5 text-white"><i class="bi bi-telephone me-2"></i>concesionarioivik.arg@ventas.com</a></li>
+                    <li class="mt-1"><a href="" class="fs-5 text-white"><i class="bi bi-phone me-2 "></i>+54 011 3356 3969</i></a></li>
+                    <li class="mt-1"><a href="" class="fs-5 text-white"><i class="bi bi-telephone me-2"></i>+54 0800 666 1518</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-12 col-md-4 p-4">
+                  <h6 class="fs-1">Encontrános!</h6>
+                  <p>
+                    Nos podés encontrar en las principales redes sociales del mundo. <br> Aprovecha nuestro servicio de respuesta inmediata y comunicate con nosotros a través de las estas!
+                  </p>
+                </div>
+                <div class="col-sm-12 col-md-4 p-4">
+                  <h6 class="fs-1">Redes sociales</h6>
+
+                  <ul class="d-flex flex-column ms-5">
+                    <li class="mt-1">
+                        <a href="https://whatsapp.com" class="text-white fs-5"><i class="bi bi-whatsapp me-2"></i>Whatsapp</i></a>
+                    </li>
+                    <li class="mt-1">
+                        <a href="https://instagram.com" class="text-white fs-5"><i class="bi bi-instagram me-2"></i>Instagram</a>
+                    </li>
+                    <li class="mt-1">
+                        <a href="https://facebook.com" class="text-white fs-5"><i class="bi bi-facebook me-2"></i>Facebook</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <div class="footerCont">
-                <div class="footerContact">
-                    <h3>Contacto</h3>
-                    <ul>
-                        <li><img src="../img/icons/email.png" alt="emaillogo" />crioivik.arg@ventas.com</li>
-                        <li><img src="../img/icons/wpp.png" alt="wpplogo" />+54 011 3356 3969</li>
-                        <li><img src="../img/icons/call.png" alt="calllogo" />+54 0800 666 1518</li>
-                    </ul>
-                </div>
-
-               <div class="footerNetworks">
-                    <h3>Encontrános!</h3>
-                    <ul>
-                        <li><img src="../img/icons/fb.png" alt="fblogo" />Facebook</li>
-                        <li><img src="../img/icons/ig.png" alt="iglogo" />Instagram</li>
-                        <li><img src="../img/icons/yt.png" alt="ytlogo" />Youtube</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footerDerechos">
+            <div class="footerDerechos text-center">
                 <h4>© Copyright 2022 - Ivan Diez - Todos los derechos reservados</h4>
             </div>
-        </footer>
+          </footer>
     </body>
 </html>
