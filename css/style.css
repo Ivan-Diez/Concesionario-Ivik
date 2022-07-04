@@ -36,9 +36,10 @@ p {
     line-height: 1.5;
 }
 
-li a {
+a {
     text-decoration: none;
 }
+
 footer {
     background-color: #071A40;
 }
@@ -134,94 +135,20 @@ footer {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
 }
 
-/* Tarjetas */
-
-.gridCard {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 5rem;
-    margin-bottom: 2rem;
-}
-
-.cardContent {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-}
-
-.cardContentText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: #fff;
-    border-top-left-radius: 2rem;
-    box-shadow: inset 15px 10px 10px -15px rgba(0, 0, 0, .6);
-}
-
-.cardContentText h3 {
-    font-family: 'SourceSansProREG';
-    font-size: 2rem;
-    color: #022873;
-}
-
-.cardContentText p {
-    font-size: 1.5rem;
-    padding: 2rem 0;
-    color: #000;
-}
-
-.cardContentText a {
-    display: block;
-    color: white;
-    font-family: 'SourceSansProREG';
-    text-align: center;
-    font-size: 1.5rem;
-    background-color: #BFA450;
-    padding: .5rem;
-    transition: all 0.5s;
-}
-
-.cardContentText a:hover {
+/* Tarjetas inicio*/
+.carBg {
     background-color: #022873;
-}
-
-.cardContentText a:focus {
-    background-color: #071A40;
-}
-
-.cardImg {
-    border-bottom-right-radius: 2rem;
     box-shadow: inset 15px 0 30px -5px rgba(0, 0, 0, .8);
-    /* box-shadow: 5px 10px 25px -2px rgba(0, 0, 0, 0.5); */
-    background-color: #022873;
-    border-right-style: solid;
-    border-width: .2rem;
-    border-color: #BFA450;
-
+    /* border-bottom-right-radius: 2rem; */
 }
-
-.cardImg img {
-    margin-top: 3rem;
-    transition: all .3s;
-
-}
-
-.cardImg img:hover {
-    transform: rotate(2deg);    
-}
-
 
 /* Titulo incial en demás páginas */
-
-
 .titleIn h2 {
     margin-top: 1rem;
     border-bottom: #000 solid;
 }
 
 /* Página: Comprá un auto */
-
 .cajaAutos img {
     background-color: white;
     border: #000 solid 2px;
@@ -255,19 +182,9 @@ footer {
 
 /* Página: Ubicación */
 
-.contentMap {
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-}
-
-.contentMap img {
-    width: 100%;
-    border: #000 solid ;
-}
+/* ... */
 
 /* Página: Contacto */
-
 .formStyle {
     color: #fff;
     background: rgb(7,26,64);
@@ -289,7 +206,6 @@ footer {
  }
 
 /* Nosotros */
-
 .banner2 {
     background-image: url(../img/nosotros/fondo.jpg);
     background-size: cover;
@@ -303,9 +219,7 @@ footer {
     border-bottom: #071A40 solid;
 }
 
-/* Grilla Horizontal: Información */
-
-
+/* Tarjetas horizontales */
 .cardBackground {
     background: rgb(7,26,64);
     background: linear-gradient(0deg, rgba(7,26,64,0.8) 0%, rgba(3,37,140,0.8) 50%, rgba(7,26,64,0.8) 100%);
@@ -321,7 +235,6 @@ footer {
 }
 
 /* Grilla vertical: Clientes */
-
 .cardUp {
     background-color: #fff;
     transition: all 0.2s;
@@ -345,20 +258,7 @@ footer {
 
 
 
-@media (max-width: 992px) {
-    .gridv {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .navbar ul {
-        display: none
-    }
-
-    .gridhContent {
-        display: flex;
-        flex-direction: column;
-    }
-
+/* @media (max-width: 992px) {
     .cardContent {
         display: flex;
         flex-direction: column;
@@ -381,7 +281,6 @@ footer {
     }
 
 }
-
 
 
 @media (max-width: 660px) {
@@ -417,4 +316,4 @@ footer {
         margin-bottom: 1rem;
         line-height: 1;
     }
-}
+} */
