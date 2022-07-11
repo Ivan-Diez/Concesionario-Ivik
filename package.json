@@ -1,0 +1,22 @@
+{
+  "name": "concesionario-ivik",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD\r Este repositorio contendrá mi proyecto de la cursada de Desarrollo Web.\r =======\r Este repositorio contendrá mi proyecto de la cursada de Desarrollo Web",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass sass/index.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivan-Diez/Concesionario-Ivik.git"
+  },
+  "author": "IvanDiez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivan-Diez/Concesionario-Ivik/issues"
+  },
+  "homepage": "https://github.com/Ivan-Diez/Concesionario-Ivik#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

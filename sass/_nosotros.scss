@@ -1,0 +1,34 @@
+.banner2 {
+    background-image: url(../img/nosotros/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tituloClientes {
+    font-size: 3rem;
+    color: #071A40;
+    margin: 3rem 1rem;
+    border-bottom: #071A40 solid;
+}
+
+// Grilla vertical: Clientes
+.cardUp {
+    background-color: #fff;
+    transition: all 0.2s;
+
+    &:hover {
+        transform: rotate(2deg) translateY(-15px);
+    }
+}
+
+.cardName {
+    font-family: 'SourceSansProREG';
+}
+
+.effect {
+    transition: box-shadow 0.3s;
+
+    &:hover {
+        box-shadow: 0 25px 25px -12px rgba(0, 0, 0, 0.4);
+    }
+}

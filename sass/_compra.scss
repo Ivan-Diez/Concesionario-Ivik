@@ -1,0 +1,30 @@
+.cajaAutos img {
+    background-color: white;
+    border: #000 solid 2px;
+    border-radius: .5rem;
+    box-shadow:inset 0px -15px 50px -5px rgba(7, 26, 64, 0.8);
+    transition: all .5s ;
+    overflow: hidden;
+
+    &:hover {
+        background-color: rgba(7, 26, 64, .2);
+        transform: translateY(-15px);
+    }
+}
+
+.cajaTexto h3 {
+    font-family: 'SourceSansProREG';
+    background: rgb(7,26,64);
+    background: linear-gradient(90deg, rgba(7,26,64,1) 0%, rgba(2,40,115,0.4) 25%, rgba(217,205,191,1) 100%);
+    font-size: 2rem;
+    padding: 1rem 1rem;
+}
+
+.cajaTextoInv h3 {
+    font-family: 'SourceSansProREG';
+    background: rgb(7,26,64);
+    background: linear-gradient(270deg, rgba(7,26,64,1) 0%, rgba(2,40,115,0.4) 25%, rgba(217,205,191,1) 100%);
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    text-align: end;
+}

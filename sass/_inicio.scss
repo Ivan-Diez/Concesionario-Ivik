@@ -1,0 +1,71 @@
+//Inicio
+.banner {
+    background-image: url(../img/menu/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 1rem 5rem;
+}
+
+// Publicidad
+.addsTitle {
+    color: #071A40;
+    font-size: 3rem;
+    margin: 2rem;
+    font-family: 'SourceSansProREG';
+    text-align: center;
+}
+
+.banner3 {
+    background-image: url(../img/menu/fondopub.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contentVideo video {
+    width: 100%;
+    border: solid 2px #D9CDBF;
+    border-radius: 2rem;
+}
+
+// Tarjeta inicio
+
+.cardBackground {
+    background: rgb(7,26,64);
+    background: linear-gradient(0deg, rgba(7,26,64,0.8) 0%, rgba(3,37,140,0.8) 50%, rgba(7,26,64,0.8) 100%);
+}
+
+// Tarjetas horizontales Inicio y Nosotros
+.cardEffect {
+    transition: all 0.6s;
+
+    &:hover {
+        transform: scale(1.05) ;
+    }
+}
+
+// Tarjetas vehículos
+.cardContent a {
+    background-color: #022873;
+    transition: all 0.8s;
+        &:hover {
+            background-color: #071A40;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+        }
+        &:focus {
+            background-color: #BFA450;
+        }
+}
+
+.carBg {
+    background-color: #022873;
+    box-shadow: inset 15px 0 30px -5px rgba(0, 0, 0, .8);
+
+    img {
+        transition: all 2s;
+
+        &:hover {
+            transform: rotateY(180deg);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.footerDerechos {
+    color: #D9CDBF;
+    box-shadow: inset 0 10px 25px rgba(0, 0, 0, .5);
+    padding: .2rem 0;
+    letter-spacing: .2rem;
+    word-spacing: .2rem;
+}
+
+.colorLink {
+    transition: all 0.8s;
+
+    i:hover {
+        color: #BFA450;
+    }
+}

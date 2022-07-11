@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+    font-family: 'SourceSansProREG';
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'MontserratAlternates';
+    src: url(../fonts/MontserratAlternates-ExtraBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'SourceSansPro';
+    background-color: #D9CDBF;
+    color: #fff;
+    margin-top: 4rem;
+}
+
+header {
+    background-color: #071A40;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #071A40;
+}
+
+// Título en varias páginas
+.titleIn h2 {
+    margin-top: 1rem;
+    border-bottom: #000 solid;
+}

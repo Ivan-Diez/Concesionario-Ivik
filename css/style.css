@@ -1,342 +1,187 @@
 @font-face {
-    font-family: 'SourceSansPro';
-    src: url(../fonts/SourceSansPro-Light.ttf);
-}
+  font-family: 'SourceSansPro';
+  src: url(../fonts/SourceSansPro-Light.ttf); }
 
 @font-face {
-    font-family: 'SourceSansProREG';
-    src: url(../fonts/SourceSansPro-Regular.ttf);
-}
+  font-family: 'SourceSansProREG';
+  src: url(../fonts/SourceSansPro-Regular.ttf); }
 
 @font-face {
-    font-family: 'MontserratAlternates';
-    src: url(../fonts/MontserratAlternates-ExtraBold.ttf);
-}
+  font-family: 'MontserratAlternates';
+  src: url(../fonts/MontserratAlternates-ExtraBold.ttf); }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
 
 body {
-    font-family: 'SourceSansPro';
-    background-color: #D9CDBF;
-    color: #fff;
-    margin-top: 4rem;
-}
+  font-family: 'SourceSansPro';
+  background-color: #D9CDBF;
+  color: #fff;
+  margin-top: 4rem; }
 
 header {
-    background-color: #071A40;
-}
+  background-color: #071A40; }
 
 p {
-    line-height: 1.5;
-}
+  line-height: 1.5; }
 
 a {
-    text-decoration: none;
-}
+  text-decoration: none; }
 
 footer {
-    background-color: #071A40;
-}
-/* NAVBAR */
-/* NAVBAR */
-/* NAVBAR */
+  background-color: #071A40; }
+
+.titleIn h2 {
+  margin-top: 1rem;
+  border-bottom: #000 solid; }
 
 .logoHeader {
-    font-family: 'MontserratAlternates';
-}
+  font-family: 'MontserratAlternates'; }
 
-.navbarTexto a{
-    color: white;
-    padding: .5rem;
-    margin-left: 1rem;
-    transition: all 0.3s;
-}
-
-.navbarTexto a:hover {
+.navbarTexto a {
+  color: white;
+  padding: .5rem;
+  margin-left: 1rem;
+  transition: all 0.3s; }
+  .navbarTexto a:hover {
     color: #fff;
     transform: scale(1.3);
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
-}
-
-.navbarTexto a:focus {
-    color: #BFA450;
-}
+    text-shadow: 0px 0px 10px white; }
+  .navbarTexto a:focus {
+    color: #BFA450; }
 
 .listBackground {
-    background-color: #071A40;
-}
-
-
-/* FOOTER */
-/* FOOTER */
-/* FOOTER */
+  background-color: #071A40; }
 
 .footerDerechos {
-    color: #D9CDBF;
-    box-shadow: inset 0 10px 25px rgba(0, 0, 0, .5);
-    padding: .2rem 0;
-    letter-spacing: .2rem;
-    word-spacing: .2rem;
-}
-
-/* MAIN- ALL PAGES */
-/* MAIN- ALL PAGES */
-/* MAIN- ALL PAGES */
-
-/* Inicio */
-/* Presentación del servicio */
-
-.banner {
-    background-image: url(../img/menu/fondo.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    padding: 1rem 5rem;
-
-}
-/* + gridh, etc. */
-
-/* Publicidad */
-
-.addsTitle {
-    color: #071A40;
-    font-size: 3rem;
-    margin: 2rem;
-    font-family: 'SourceSansProREG';
-    text-align: center;
-}
-
-.banner3 {
-    background-image: url(../img/menu/fondopub.jpg);
-    background-size: cover;
-    overflow: hidden;
-
-}
-
-
-.contentVideo video {
-    width: 100%;
-    border: solid 2px #D9CDBF;
-    border-radius: 2rem;
-}
-
-/* Tarjetas inicio*/
-.carBg {
-    background-color: #022873;
-    box-shadow: inset 15px 0 30px -5px rgba(0, 0, 0, .8);
-    /* border-bottom-right-radius: 2rem; */
-}
-
-.carBg img {
-    transition: all 2s;
-}
-
-.carBg img:hover {
-    transform: rotateY(180deg);
-}
-
-.cardBackground {
-    background: rgb(7,26,64);
-    background: linear-gradient(0deg, rgba(7,26,64,0.8) 0%, rgba(3,37,140,0.8) 50%, rgba(7,26,64,0.8) 100%);
-}
-
-.cardContent a {
-    background-color: #022873;
-    transition: all 0.8s;
-}
-
-.cardContent a:hover {
-    background-color: #071A40;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
-}
-
-.cardContent a:focus {
-    background-color: #BFA450;
-}
-
-
-
-/* Titulo incial en demás páginas */
-.titleIn h2 {
-    margin-top: 1rem;
-    border-bottom: #000 solid;
-}
-
-/* Página: Comprá un auto */
-.cajaAutos img {
-    background-color: white;
-    border: #000 solid 2px;
-    border-radius: .5rem;
-    box-shadow:inset 0px -15px 50px -5px rgba(7, 26, 64, 0.8);
-    transition: all .5s ;
-    overflow: hidden;
-}
-
-.cajaAutos img:hover {
-    background-color: rgba(7, 26, 64, .2);
-    transform: translateY(-15px);
-}
-
-.cajaTexto h3 {
-    font-family: 'SourceSansProREG';
-    background: rgb(7,26,64);
-    background: linear-gradient(90deg, rgba(7,26,64,1) 0%, rgba(2,40,115,0.4) 25%, rgba(217,205,191,1) 100%);
-    font-size: 2rem;
-    padding: 1rem 1rem;
-}
-
-.cajaTextoInv h3 {
-    font-family: 'SourceSansProREG';
-    background: rgb(7,26,64);
-    background: linear-gradient(270deg, rgba(7,26,64,1) 0%, rgba(2,40,115,0.4) 25%, rgba(217,205,191,1) 100%);
-    font-size: 2rem;
-    padding: 1rem 1rem;
-    text-align: end;
-}
-
-/* Página: Ubicación */
-
-/* ... */
-
-/* Página: Contacto */
-.formStyle {
-    color: #fff;
-    background: rgb(7,26,64);
-    background: radial-gradient(circle, rgba(7,26,64,1) 0%, rgba(7,26,64,1) 60%, rgba(2,40,115,1) 100%);
-    padding: 1rem;
-}
-
- .buttonStyle {
-    background-color: #fff;
-    font-family: 'SourceSansProREG';
-    padding: 0 1rem;
-    border-radius: 1rem;
-    box-shadow: inset 0 0 15px rgba(0, 0, 0, .8);
- }
-
- .buttonStyle:hover {
-    color: #fff;
-    background-color: #BFA450;
- }
-
-/* Nosotros */
-.banner2 {
-    background-image: url(../img/nosotros/fondo.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.tituloClientes {
-    font-size: 3rem;
-    color: #071A40;
-    margin: 3rem 1rem;
-    border-bottom: #071A40 solid;
-}
-
-/* Tarjetas horizontales Inicio y Nosotros*/
-.cardEffect {
-    transition: all 0.6s;
-}
-
-.cardEffect:hover {
-    transform: scale(1.05) ;
-}
-
-/* Grilla vertical: Clientes */
-.cardUp {
-    background-color: #fff;
-    transition: all 0.2s;
-}
-
-.cardUp:hover {
-    transform: rotate(2deg) translateY(-15px) ;
-}
-
-.cardName {
-    font-family: 'SourceSansProREG';
-}
-
-.effect {
-    transition: box-shadow 0.3s;
-}
-  
-.effect:hover {
-    box-shadow: 0 25px 50px -12px rgb(0, 0, 0, 0.4);
-}
+  color: #D9CDBF;
+  box-shadow: inset 0 10px 25px rgba(0, 0, 0, 0.5);
+  padding: .2rem 0;
+  letter-spacing: .2rem;
+  word-spacing: .2rem; }
 
 .colorLink {
-    transition: all 0.8s;
-}
+  transition: all 0.8s; }
+  .colorLink i:hover {
+    color: #BFA450; }
 
-.colorLink i:hover {
-    color: #BFA450;
-}
+.banner {
+  background-image: url(../img/menu/fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 1rem 5rem; }
 
-/* 
-@media (max-width: 992px) {
-    .cardContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
+.addsTitle {
+  color: #071A40;
+  font-size: 3rem;
+  margin: 2rem;
+  font-family: 'SourceSansProREG';
+  text-align: center; }
 
-    .cardImg {
-        display: flex;
-        justify-content: center;
-    }
+.banner3 {
+  background-image: url(../img/menu/fondopub.jpg);
+  background-size: cover;
+  overflow: hidden; }
 
-    .cardImg img {
-        padding: 1rem;
-        margin-top: 0;
-    }
+.contentVideo video {
+  width: 100%;
+  border: solid 2px #D9CDBF;
+  border-radius: 2rem; }
 
-    .catalogueImg {
-        display: flex;
-        flex-direction: column;
-    }
+.cardBackground {
+  background: #071a40;
+  background: linear-gradient(0deg, rgba(7, 26, 64, 0.8) 0%, rgba(3, 37, 140, 0.8) 50%, rgba(7, 26, 64, 0.8) 100%); }
 
-} */
+.cardEffect {
+  transition: all 0.6s; }
+  .cardEffect:hover {
+    transform: scale(1.05); }
 
-/* @media (max-width: 660px) {
-     video {
-        width: 100%;
-    }
-} */
+.cardContent a {
+  background-color: #022873;
+  transition: all 0.8s; }
+  .cardContent a:hover {
+    background-color: #071A40;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); }
+  .cardContent a:focus {
+    background-color: #BFA450; }
 
-/* 
+.carBg {
+  background-color: #022873;
+  box-shadow: inset 15px 0 30px -5px rgba(0, 0, 0, 0.8); }
+  .carBg img {
+    transition: all 2s; }
+    .carBg img:hover {
+      transform: rotateY(180deg); }
 
-.gridv {
-    grid-template-columns: 1fr;
-}
+.banner2 {
+  background-image: url(../img/nosotros/fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
 
-.gridh {
-    display: inline;
-}
+.tituloClientes {
+  font-size: 3rem;
+  color: #071A40;
+  margin: 3rem 1rem;
+  border-bottom: #071A40 solid; }
 
-.gridhContent {
-    margin-bottom: 1rem;
-}
+.cardUp {
+  background-color: #fff;
+  transition: all 0.2s; }
+  .cardUp:hover {
+    transform: rotate(2deg) translateY(-15px); }
 
-.contentImg img {
-    width: 100%;
-}
+.cardName {
+  font-family: 'SourceSansProREG'; }
 
-.gridCard {
-    width: 100%;
-}
+.effect {
+  transition: box-shadow 0.3s; }
+  .effect:hover {
+    box-shadow: 0 25px 25px -12px rgba(0, 0, 0, 0.4); }
 
-.contentText {
-    margin-bottom: 1rem; 
-}
+.cajaAutos img {
+  background-color: white;
+  border: #000 solid 2px;
+  border-radius: .5rem;
+  box-shadow: inset 0px -15px 50px -5px rgba(7, 26, 64, 0.8);
+  transition: all .5s;
+  overflow: hidden; }
+  .cajaAutos img:hover {
+    background-color: rgba(7, 26, 64, 0.2);
+    transform: translateY(-15px); }
 
-.contentText h2 {
-    margin-bottom: 1rem;
-    line-height: 1;
-}
-*/
+.cajaTexto h3 {
+  font-family: 'SourceSansProREG';
+  background: #071a40;
+  background: linear-gradient(90deg, #071a40 0%, rgba(2, 40, 115, 0.4) 25%, #d9cdbf 100%);
+  font-size: 2rem;
+  padding: 1rem 1rem; }
+
+.cajaTextoInv h3 {
+  font-family: 'SourceSansProREG';
+  background: #071a40;
+  background: linear-gradient(270deg, #071a40 0%, rgba(2, 40, 115, 0.4) 25%, #d9cdbf 100%);
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  text-align: end; }
+
+.formStyle {
+  color: #fff;
+  background: #071a40;
+  background: radial-gradient(circle, #071a40 0%, #071a40 60%, #022873 100%);
+  padding: 1rem; }
+
+.buttonStyle {
+  background-color: #fff;
+  font-family: 'SourceSansProREG';
+  padding: 0 1rem;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8); }
+  .buttonStyle:hover {
+    color: #fff;
+    background-color: #BFA450; }
