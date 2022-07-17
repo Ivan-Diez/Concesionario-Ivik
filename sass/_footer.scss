@@ -1,5 +1,5 @@
 .footerDerechos {
-    color: #D9CDBF;
+    color: $gLight;
     box-shadow: inset 0 10px 25px rgba(0, 0, 0, .5);
     padding: .2rem 0;
     letter-spacing: .2rem;
@@ -10,6 +10,19 @@
     transition: all 0.8s;
 
     i:hover {
-        color: #BFA450;
+        color: $gDark;
     }
 }
+
+ // Mapa y bucle each
+ $redesSociales: (
+    whatsapp: #00bb2d,
+    instagram: #C13584,
+    facebook: #3b5998,
+ );
+
+ @each $nombre, $color in $redesSociales {
+    .link-#{$nombre} {
+        color: $color;
+    }
+ }

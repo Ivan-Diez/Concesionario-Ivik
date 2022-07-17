@@ -12,19 +12,22 @@
     }
 }
 
-.cajaTexto h3 {
+// aplico extend
+
+.cajaTexto {
     font-family: 'SourceSansProREG';
     background: rgb(7,26,64);
-    background: linear-gradient(90deg, rgba(7,26,64,1) 0%, rgba(2,40,115,0.4) 25%, rgba(217,205,191,1) 100%);
     font-size: 2rem;
     padding: 1rem 1rem;
 }
 
-.cajaTextoInv h3 {
-    font-family: 'SourceSansProREG';
-    background: rgb(7,26,64);
+.cTI h3 {
+    @extend .cajaTexto;
+    background: linear-gradient(90deg, rgba(7,26,64,1) 0%, rgba(2,40,115,0.4) 25%, rgba(217,205,191,1) 100%);
+}
+
+.cTD h3 {
+    @extend .cajaTexto;
     background: linear-gradient(270deg, rgba(7,26,64,1) 0%, rgba(2,40,115,0.4) 25%, rgba(217,205,191,1) 100%);
-    font-size: 2rem;
-    padding: 1rem 1rem;
-    text-align: end;
+    text-align: end; 
 }

@@ -1,15 +1,21 @@
 //Inicio
-.banner {
-    background-image: url(../img/menu/fondo.jpg);
+@mixin parallax {
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    overflow: hidden;
+}
+
+
+.banner {
+    @include parallax;
+    background-image: url(../img/menu/fondo.jpg);
+    height: 80vh;
     padding: 1rem 5rem;
 }
 
 // Publicidad
 .addsTitle {
-    color: #071A40;
+    color: $bDark;
     font-size: 3rem;
     margin: 2rem;
     font-family: 'SourceSansProREG';
@@ -17,14 +23,13 @@
 }
 
 .banner3 {
+    @include parallax;
     background-image: url(../img/menu/fondopub.jpg);
-    background-size: cover;
-    overflow: hidden;
 }
 
 .contentVideo video {
     width: 100%;
-    border: solid 2px #D9CDBF;
+    border: solid 2px $gLight;
     border-radius: 2rem;
 }
 
@@ -46,19 +51,19 @@
 
 // Tarjetas vehículos
 .cardContent a {
-    background-color: #022873;
+    background-color: $bMed;
     transition: all 0.8s;
         &:hover {
-            background-color: #071A40;
+            background-color: $bDark;
             box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
         }
         &:focus {
-            background-color: #BFA450;
+            background-color: $gDark;
         }
 }
 
 .carBg {
-    background-color: #022873;
+    background-color: $bMed;
     box-shadow: inset 15px 0 30px -5px rgba(0, 0, 0, .8);
 
     img {

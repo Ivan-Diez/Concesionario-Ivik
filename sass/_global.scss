@@ -23,13 +23,13 @@
 
 body {
     font-family: 'SourceSansPro';
-    background-color: #D9CDBF;
-    color: #fff;
+    background-color: $gLight;
+    color: $white;
     margin-top: 4rem;
 }
 
 header {
-    background-color: #071A40;
+    background-color: $bDark;
 }
 
 p {
@@ -41,11 +41,11 @@ a {
 }
 
 footer {
-    background-color: #071A40;
+    background-color: $bDark;
 }
 
 // Título en varias páginas
 .titleIn h2 {
     margin-top: 1rem;
-    border-bottom: #000 solid;
+    border-bottom: $black solid;
 }

@@ -6,14 +6,14 @@
 
 .tituloClientes {
     font-size: 3rem;
-    color: #071A40;
+    color: $bDark;
     margin: 3rem 1rem;
-    border-bottom: #071A40 solid;
+    border-bottom: $bDark solid;
 }
 
 // Grilla vertical: Clientes
 .cardUp {
-    background-color: #fff;
+    background-color: $white;
     transition: all 0.2s;
 
     &:hover {
